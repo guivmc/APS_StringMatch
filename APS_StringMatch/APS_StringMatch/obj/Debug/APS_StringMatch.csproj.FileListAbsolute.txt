@@ -1,0 +1,7 @@
+C:\Users\Guilherme\source\repos\APS_StringMatch\APS_StringMatch\bin\Debug\APS_StringMatch.exe.config
+C:\Users\Guilherme\source\repos\APS_StringMatch\APS_StringMatch\bin\Debug\APS_StringMatch.exe
+C:\Users\Guilherme\source\repos\APS_StringMatch\APS_StringMatch\bin\Debug\APS_StringMatch.pdb
+C:\Users\Guilherme\source\repos\APS_StringMatch\APS_StringMatch\obj\Debug\APS_StringMatch.csprojAssemblyReference.cache
+C:\Users\Guilherme\source\repos\APS_StringMatch\APS_StringMatch\obj\Debug\APS_StringMatch.csproj.CoreCompileInputs.cache
+C:\Users\Guilherme\source\repos\APS_StringMatch\APS_StringMatch\obj\Debug\APS_StringMatch.exe
+C:\Users\Guilherme\source\repos\APS_StringMatch\APS_StringMatch\obj\Debug\APS_StringMatch.pdb
