@@ -12,8 +12,6 @@ namespace APS_StringMatch
 
         static void Main( string[] args )
         {
-            FileInfo file = new FileInfo( "..\\Text\\file.txt" );
-
             WordFinder wf = new WordFinder( "..\\Text\\file.txt" );
 
 
@@ -25,16 +23,15 @@ namespace APS_StringMatch
             fin = DateTime.Now;
             wf.TimeOneCore = fin.Subtract( start ).ToString();
 
-
-            wf.MultiThreadFind();
-
             Console.WriteLine( wf.PrintTotal() );
 
-            Console.WriteLine( "Caluna A (Tamanho em Bytes): " + file.Length );
+            Console.WriteLine( "Caluna A: " + wf.Lines[1].Length );
 
             Console.WriteLine( "Caluna B: " + wf.TimeOneCore );
 
-            Console.WriteLine( "Caluna C: 3");
+            Console.WriteLine( "Caluna C: 3" );
+
+            wf.MultiThreadFind();
 
             Console.WriteLine( "Caluna D: " + wf.TimeMultiCore );
 

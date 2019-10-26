@@ -107,20 +107,14 @@ namespace APS_StringMatch
 
             int size = Int32.Parse( this.Lines[0] ) / 3 + Int32.Parse( this.Lines[0] ) % 3;
 
-            Thread t1 = new Thread( new ThreadStart( () => this.SingleThreadFind( 0, size)));
-            Thread t2 = new Thread( new ThreadStart( () => this.SingleThreadFind( size, 2 * size )));
-            Thread t3 = new Thread( new ThreadStart( () => this.SingleThreadFind( 2 * size, 3 * size )));
-
-            t1.Name = "Thread1";
-            t2.Name = "Thread2";
-            t3.Name = "Thread3";
-
-            DateTime fin;
+            DateTime fin = DateTime.Now;
             DateTime start = DateTime.Now;
-            t1.Start();
-            t2.Start();
-            t3.Start();
+
+            Parallel.Invoke( () => this.SingleThreadFind( 0, size ), () => this.SingleThreadFind( size, 2 * size ), () => this.SingleThreadFind( 2 * size, 3 * size ) );
+
             fin = DateTime.Now;
+
+
             this.TimeMultiCore = fin.Subtract( start ).ToString();
         }
 
